@@ -14,7 +14,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-SECRET  = os.environ.get("OTP_SECRET", "changeme123")
+SECRET  = os.environ.get("OTP_SECRET", "Banquil0987")
 OTP_TTL = 300  # 5 minutes
 
 _store = {"otp": None, "received_at": None, "used": False}
