@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: grass-otp-server
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OTP_SECRET
+        value: changeme123   # ⚠️ Change this in Render dashboard!
